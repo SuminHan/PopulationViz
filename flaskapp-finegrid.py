@@ -25,7 +25,7 @@ def living():
 
 @app.route("/data")
 def data():
-    ymd = request.args.get('ymd', default = '20170301', type = str)
+    ymd = request.args.get('ymd', default = '20170306', type = str)
     hour = request.args.get('hour', default = 9, type = int)
     print(ymd, hour)
     y = int(ymd[:4])
@@ -47,4 +47,4 @@ def main():
     return send_file('templates/population.html')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    app.run(host="0.0.0.0", port=15151)

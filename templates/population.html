@@ -167,7 +167,7 @@
                 <label id="ymd"></label>
             </h2>
             <p style='text-align:right'>
-                <input id="ymd-slider" type="range" min=0 max=365 step=1 value=0 />
+                <input id="ymd-slider" type="range" min=0 max=365 step=1 value=5 />
                 <button id='ymd-plus'>+</button>
                 <button id='ymd-minus'>-</button>
             </p>
@@ -179,7 +179,7 @@
                 <label id="hour"></label>
             </h2>
             <p style='text-align:right'>
-                <input id="hour-slider" type="range" min=0 max=48 step=1 value=18 />
+                <input id="hour-slider" type="range" min=0 max=48 step=1 value=10 />
                 <button id='hour-plus'>+</button>
                 <button id='hour-minus'>-</button>
             </p>
@@ -195,7 +195,7 @@
                 style: 'mapbox://styles/mapbox/streets-v11',
                 center: [126.9780, 37.5665],
                 zoom: 10,
-                pitch: 50,
+                pitch: 15,
                 //bearing: 20,
                 antialias: true
             });
@@ -309,8 +309,8 @@
                                     });
                                 }
 
-                                var mymd = 0;
-                                var mhour = 18;
+                                var mymd = 5;
+                                var mhour = 10;
                                 filterBy(mymd, mhour);
 
 
